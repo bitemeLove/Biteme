@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "251808154870",
+    "firebase_url": "https://biteme-67467.firebaseio.com",
+    "project_id": "biteme-67467",
+    "storage_bucket": "biteme-67467.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251808154870:android:6bd1922fd42a6e70",
+        "android_client_info": {
+          "package_name": "com.biteme.biteme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251808154870-5kbbu6gdbs0q3spg960o47kacfgbadhl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.biteme.biteme",
+            "certificate_hash": "74FE9A273345D74E30C01CCF8A0A3EE03D0BA151"
+          }
+        },
+        {
+          "client_id": "251808154870-htraa80a8ann4qpmbom3l64e1b62cbe3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiDbaVv4_pvrYAXkTvmL85PTVCMlu11fI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251808154870-htraa80a8ann4qpmbom3l64e1b62cbe3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

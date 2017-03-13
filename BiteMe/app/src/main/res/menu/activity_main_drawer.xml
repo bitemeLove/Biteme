@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/sweethomeicon"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_first_layout"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_fourht_layout"
+            android:icon="@drawable/friends"
+
+            android:title="Your friends" />
+        <item
+            android:id="@+id/nav_third_layout"
+            android:icon="@drawable/dates"
+
+            android:title="Dates" />
+
+    </group>
+
+    <item android:title="Share the love!">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Invite friends" />
+
+        </menu>
+    </item>
+
+</menu>

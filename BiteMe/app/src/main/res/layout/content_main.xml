@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/cardview_light_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.biteme.biteme.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1">
+
+                    <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_weight="1.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="999999">
+
+                                        <TextView
+                                            android:text="intrested in:"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/txt_intrests"
+                                            android:textColor="@color/cardview_dark_background"
+
+                                            android:layout_weight="1" />
+
+                                        <Spinner
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/spinner"
+                                            android:textColor="#000000"
+
+                                            android:layout_weight="1" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="999999">
+
+                                        <com.facebook.login.widget.ProfilePictureView
+                                            android:id="@+id/user_profile_pic"
+                                            android:gravity="right"
+                                            android:layout_below="@+id/text_details"
+
+                                            tools:layout_gravity="left"
+                                            android:layout_width="150dp"
+                                            android:layout_height="150dp"
+                                            android:layout_weight="0"
+                                            android:layout_gravity="top"
+                                            android:forceHasOverlappingRendering="false">
+
+                                        </com.facebook.login.widget.ProfilePictureView>
+
+                                        <LinearLayout
+                                            android:orientation="vertical"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="0">
+
+                                            <com.dd.CircularProgressButton
+                                                android:id="@+id/update"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="16dp"
+                                                android:textColor="@color/cpb_white"
+                                                android:textSize="18sp"
+                                                app:cpb_cornerRadius="48dp"
+                                                app:cpb_textComplete="Updated"
+                                                app:cpb_textError="Failed"
+                                                app:cpb_textIdle="Update"
+                                                app:cpb_selectorIdle="@drawable/idle_state_selector"
+                                                app:cpb_selectorComplete="@drawable/complete_state_selector"
+                                                app:cpb_selectorError="@drawable/error_state_selector"/>
+
+                                            <TextView
+                                                android:layout_height="29dp"
+                                                android:layout_width="match_parent"
+                                                android:text="Birthdate: "
+                                                android:id="@+id/userage"
+
+                                                android:layout_marginTop="13dp"
+
+                                                android:textColor="@color/cardview_dark_background"
+                                                android:layout_weight="0" />
+
+                                            <com.facebook.login.widget.LoginButton
+                                                android:id="@+id/login_button"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+
+                                                android:layout_weight="0"
+                                                android:gravity="center_horizontal|center" />
+
+                                            <TextView
+                                                android:text="Gender:"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:id="@+id/mygender"
+
+                                                android:textColor="@color/cardview_dark_background"
+
+                                                android:layout_weight="0" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                    </FrameLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/rfa"
+                    android:layout_weight="0.7">
+
+
+                    <TextView
+                        android:text="What are your interests?"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/intrests"
+                        android:textColor="@color/cardview_dark_background"
+                        android:layout_weight="0" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="1st intrest"
+
+                        android:id="@+id/intrest1"
+
+                        android:textColor="@android:color/black"
+                        android:layout_weight="0" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="2nd intrest"
+                         android:id="@+id/interest2"
+
+                        android:textColor="@android:color/black"
+                        android:layout_weight="0" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="3rd interest"
+
+                        android:id="@+id/interest3"
+
+                        android:textColor="@android:color/black"
+                        android:layout_weight="0" />
+
+                    <TextView
+                        android:text="Your popularity:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_popularity"
+                        android:textColor="@color/cardview_dark_background"
+                        android:layout_weight="0" />
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ratingBar"
+                        android:rating="4.5"
+                        android:isIndicator="true"
+                        android:layout_weight="0" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/layouthome">
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_details"
+                        android:text="Hello! Please login using Facebook."
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="19sp"
+                        android:textColor="@color/cardview_dark_background" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:text="Please like us on facebook!"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/likeus"
+                                android:layout_weight="0"
+                                android:textColor="@color/cast_expanded_controller_background_color" />
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp">
+
+        <com.facebook.login.widget.ProfilePictureView
+            android:id="@+id/profilepichome"
+            tools:layout_gravity="left"
+            android:layout_weight="0"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+        </com.facebook.login.widget.ProfilePictureView>
+
+    </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.4">
+
+                            <com.facebook.share.widget.LikeView
+                                android:id="@+id/likeView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                            </com.facebook.share.widget.LikeView>
+
+                            <TextView
+                                android:text="Like the app? Help us by sharing the love! "
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/invitetxt"
+                                android:layout_weight="1"
+                                android:textColor="@color/cardview_dark_background" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/invitebtn"
+                                style="@style/com_facebook_button"
+                                android:text="Inivte Friends" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/layoutfriendrequest"
+                        android:layout_weight="0">
+
+                        <TextView
+                            android:text="Friend requests:"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/frienrequesttxt"
+                            android:textColor="@color/cardview_dark_background" />
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:id="@+id/listview"
+
+                            android:layout_weight="0"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="Recommended Friends:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/friendstxt"
+                        android:textColor="@color/cardview_dark_background" />
+
+                    <ListView
+                    android:id="@+id/listview_req"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:columnWidth="90dp"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:stretchMode="columnWidth"
+                    android:gravity="center"
+                    />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:id="@+id/listviewfriends"
+        android:scrollbars="horizontal"
+        android:rotation="0" />
+    <ListView style="@style/CodeFont"
+        android:layout_width="wrap_content"
+        android:id="@+id/listviewchat"
+
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recylcer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:visibility="gone" />
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progresslayout">
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_weight="0">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+</RelativeLayout>
